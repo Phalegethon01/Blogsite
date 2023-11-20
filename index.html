@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Blog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>My Interactive Blog</h1>
+      <!-- Navigation bar -->
+      <nav>
+        <ul>
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#">Education</a>
+              <a href="#">Travel</a>
+              <a href="#">Gadegts</a>
+            </div>
+          </div>
+          <li><a href="#">Travel Calender</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <!-- Blog Post 1 -->
+      <article class="blog-post" id="home">
+        <div class="featured-image">
+          <!-- Featured image -->
+          <img src="Assets/Welcome-image.webp" alt="Featured Image">
+        </div>
+        <h2>My way of thinking</h2>
+        <p>Welcome, everyone. Hope you are all well and enjoying your life some may have a different opinion but it's alright. I am starting this blog website so that I can just write and also tell everyone what I like or dislike. 
+            Well you must think who cares? Well I don't care what others care about so I will just continue to write blogs and enjoy typing them. I just wanted to start a blogging website of my own and also thought of letting others write what's on their mind but I changed my thinking as it's too work for me letting others write in my site.
+        I may someday change my thinking but like I said who cares about it anyway.</p>
+        <div id="comments">
+          <h3>Comments</h3>
+          <ul id="commentList">
+            <!-- Comments will be dynamically inserted here -->
+          </ul>
+          <form id="commentForm">
+            <input type="text" id="commentInput" placeholder="Your comment">
+            <button type="submit">Add Comment</button>
+          </form>
+        </div>
+      </article>
+
+      <!-- Blog Post 2 -->
+      <article class="blog-post" id="about">
+        <div class="featured-image">
+          <!-- Featured image -->
+          <img src="Assets/FlipperZero.jpg" alt="Another Featured Image">
+        </div>
+        <h2>What is FlipperZero?</h2>
+        <p>The 'ev' function is considered unsafe and should be avoided in most cases...</p>
+        <div id="commentsForEval">
+          <h3>Comments</h3>
+          <ul id="commentListForEval">
+            <!-- Comments will be dynamically inserted here -->
+          </ul>
+          <form id="commentFormForEval">
+            <input type="text" id="commentInputForEval" placeholder="Your comment">
+            <button type="submit">Add Comment</button>
+          </form>
+        </div>
+      </article>
+
+      <!-- Contact Section -->
+      <article class="blog-post" id="contact">
+        <footer>
+          <div class="container">
+            <div class="footer-content">
+              <div class="contact-links">
+                <h3>Contact Us</h3>
+                <ul>
+                  <li>Email: example@example.com</li>
+                  <li>Phone: +1 234 5678</li>
+                  <li>Address: 123 Street, City, Country</li>
+                </ul>
+              </div>
+              <div class="newsletter">
+                <h3>Subscribe to Our Newsletter</h3>
+                <form id="newsletterForm">
+                  <input type="text" id="nameInput" placeholder="Your Name">
+                  <input type="email" id="emailInput" placeholder="Your Email">
+                  <button type="submit">Subscribe</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </article>
+    </div>
+  </main>
+
+
+ <!-- Place this where you want the ad to appear -->
+<div class="ad-container">
+    <!-- Paste your AdSense ad code here -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-5668375902196072"
+         data-ad-slot="4355336539"
+         data-ad-format="auto"></ins>
+  </div>
+  <!-- Place this script at the end of the body section -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>

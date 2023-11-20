@@ -1,0 +1,242 @@
+/* Basic styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #ac49b9;
+    color: rgb(99, 31, 119);
+  }
+  
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    
+  }
+  
+  header {
+    background-color: rgb(79, 10, 88);
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+   
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #ff7f50;
+  }
+
+  /* Dropdown Button */
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+  
+  .blog-post {
+    margin: 40px 0;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .featured-image img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  /* Form and Comment Styles */
+  #commentForm,
+  #commentFormForEval {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #ff7f50;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ff6347;
+  }
+  
+  /* Blog Post Titles */
+  .blog-post h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #333;
+  }
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+  }
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contact-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contact-links ul li {
+    margin-bottom: 10px;
+  }
+  
+  .newsletter form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .newsletter input[type="text"],
+  .newsletter input[type="email"],
+  .newsletter button {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .newsletter input[type="text"],
+  .newsletter input[type="email"] {
+    flex: 1;
+  }
+  
+  .newsletter button {
+    padding: 10px;
+    background-color: #ff7f50;
+    color: #fff;
+    border: none;
+ border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .newsletter button:hover {
+    background-color: #ff6347;
+  }
+  
+  
+  /* Comments Section */
+  #comments,
+  #commentsForEval {
+    margin-top: 30px;
+  }
+  
+  .comment-list {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .comment-list li {
+    list-style: none;
+    padding: 10px;
+    background-color: #fafafa;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .comment {
+    animation: fadeIn 0.5s ease;
+  }
+  
